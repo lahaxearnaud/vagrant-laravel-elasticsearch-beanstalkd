@@ -3,7 +3,7 @@
 # java
 add-apt-repository ppa:webupd8team/java
 apt-get update
-apt-get install oracle-java7-installer unzip
+apt-get install -y oracle-java7-installer unzip
 
 # Elastic search
 cd /tmp
@@ -17,6 +17,3 @@ mv elasticsearch-1.1.1 /var/elasticsearch
 
 # add on start
 echo "./var/elasticsearch/bin/elasticsearch"  >> /etc/rc.local
-
-# beanstalkd
-sudo apt-get install beanstalkd

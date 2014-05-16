@@ -1,0 +1,2 @@
+vagrant-laravel-elasticsearch-beanstalkd
+========================================

@@ -56,5 +56,13 @@ class Homestead
         s.inline = "bash /vagrant/scripts/elasticsearch.sh"
     end
 
+    config.vm.provision "shell" do |s|
+        s.inline = "bash /vagrant/scripts/goodies.sh"
+    end
+
+    config.vm.provision "shell" do |s|
+        s.inline = "bash /vagrant/scripts/final.sh"
+    end
+
   end
 end
